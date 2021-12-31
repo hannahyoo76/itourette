@@ -1,0 +1,85 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yoo.hannah.itourette">
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ITourette"
+        android:fullBackupContent="false"
+        android:allowBackup="false">
+        <activity
+            android:name="hannah.yoo.itourette.Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="hannah.yoo.itourette.Homepage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="hannah.yoo.itourette.Analysis"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="hannah.yoo.itourette.Information"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="hannah.yoo.itourette.FocusTracker"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="hannah.yoo.itourette.GameMenu"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="hannah.yoo.itourette.Gitc"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="hannah.yoo.itourette.Gktls"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="hannah.yoo.itourette.Grcg"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="hannah.yoo.itourette.Gctrb"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
+
+
