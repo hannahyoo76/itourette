@@ -1,6 +1,7 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="yoo.hannah.itourette">
+
     <application
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
