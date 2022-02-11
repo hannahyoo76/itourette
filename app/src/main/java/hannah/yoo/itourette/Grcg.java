@@ -1,23 +1,30 @@
 package hannah.yoo.itourette;
 
-import android.content.Intent;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.ImageButton;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import yoo.hannah.itourette.R;
 
-public class Grcg extends AppCompatActivity {
+public class Grcg extends AppCompatActivity{
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
+    public void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
 
-    setContentView(R.layout.grcg);
-
+        setContentView(R.layout.grcg);
     }
 }
+
+
+        //1. View define
+        //ImageButton imgBtn[] ~
+
+        //2. setOnClickListener { set Image to element in array}
+
+        //3. random : for loop (flag array)
+
+        //4.click pair
+
+

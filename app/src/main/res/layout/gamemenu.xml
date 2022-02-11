@@ -5,42 +5,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_200"
+    android:background="@color/purple_200"
     android:gravity="center"
     android:orientation="vertical">
     <TextView
         android:id="@+id/games_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="32sp"
         android:textColor="@color/white"
         android:text="GAMES"/>
 
-    <Button
+    <ImageButton
         android:id="@+id/line_straight"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:text="Keep the Line Straight"
-        android:textColor="@color/teal_200"
-        tools:ignore="TextContrastCheck" />
-    <Button
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/ktls"
+        tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
         android:id="@+id/right_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Click the Right Button"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/teal_200"/>
-    <Button android:id="@+id/card_game"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/ctrb"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/card_game"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/teal_200"
-        android:text="Random Card Game"/>
-    <Button android:id="@+id/identify_color"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/rcg"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/identify_color"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/teal_200"
-        android:text="Identify the Color"/>
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/itc"
+        tools:ignore="SpeakableTextPresentCheck" />
 </LinearLayout>
