@@ -15,6 +15,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import yoo.hannah.itourette.R;
 
 public class Gitc extends AppCompatActivity {
+    // make the pages instance variables
+    // one of the Handler things can do the swapping back and forth
+    // we might need inheritance (extra things that i'm keeping track of)
+    
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

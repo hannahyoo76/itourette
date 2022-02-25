@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -17,10 +18,10 @@ public class GameMenu extends AppCompatActivity {
 
     setContentView(R.layout.gamemenu);
 
-    Button keep_line_straight = findViewById(R.id.line_straight);
-    Button click_right_button = findViewById(R.id.right_button);
-    Button random_card_game = findViewById(R.id.card_game);
-    Button identify_the_color = findViewById(R.id.identify_color);
+    ImageButton keep_line_straight = findViewById(R.id.line_straight);
+    ImageButton click_right_button = findViewById(R.id.right_button);
+    ImageButton random_card_game = findViewById(R.id.card_game);
+    ImageButton identify_the_color = findViewById(R.id.identify_color);
     TextView tv = findViewById(R.id.games_tv);
 
         keep_line_straight.setOnClickListener(new View.OnClickListener() {
