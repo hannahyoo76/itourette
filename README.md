@@ -15,6 +15,8 @@ The color green relaxes tension in the eye and evokes calmness in the brain, imp
 The color white evokes positive thought and emotional control. The clean hue without any disturbance in pigmentation allows clear thought processes in children. In addition, white creates a sense of space and purity. As the target users are children, representing purity seemed apt for the color scheme.
 
 🟣 Secondary Color: Periwinkle 
+The color periwinkle consists of a mixture between blue and violet. Since blue allows the calming sensation of the brain, the intention to incorporate blue was to encourage relaxation to iTourette users. Since the target users are children, pastel hue was emphasized as a common characteristic for all colors in the color scheme. 
+
 ------
 📌 LOGO
 The first point of emphasis was the logo’s shape, which is a model of the basal ganglia. This is because Tourette Syndrome is an illness that is related to the body control movement (tics and involuntary actions), and the dysfunction is rooted in the brain’s basal ganglia. Similar to the curly shape that inverts to the center, emphasis was made to incorporate the brain anatomy into the icon. In addition, the color green was chosen for the basis of the shape because it is the primary color of the software. Mainly targeting children, the pastel green tone was used on a clean white background. There were two designs for the icon, the first one written in Korean (spelled out as iTourette) characters and the second one with the English alphabet. The first design was made in Korean, as the target users would be Korean children, but to launch an English version of the icon was designed to launch the application internationally. 
