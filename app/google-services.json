@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1028730429943",
+    "project_id": "itourette",
+    "storage_bucket": "itourette.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028730429943:android:74f3a36b3e1a7a51148ef2",
+        "android_client_info": {
+          "package_name": "hannah.yoo.itourette"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028730429943-4ac5js1f45gp6bvgbq9n0sfs2kbvmrac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hannah.yoo.itourette",
+            "certificate_hash": "fd90d5e9ccf792bab601c7d0eeb107796306529e"
+          }
+        },
+        {
+          "client_id": "1028730429943-mjdot8dlfsgs9muq7kgrv57gcc9bjji4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQTH_ln9mIYqVMwGPGv6JFtzMu10U9Xts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028730429943-mjdot8dlfsgs9muq7kgrv57gcc9bjji4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
