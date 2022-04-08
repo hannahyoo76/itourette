@@ -1,0 +1,11 @@
+🎮 GAME 1: KEEP THE LINE STRAIGHT 
+Keep the Line Straight is a game in iTourette where the user has to manipulate the arrow in order to keep itself on the green track (line in the middle). Throughout the game, the line progressively shrinks into thinner lines, making it more difficult for the user to stay on track. The strategy for success is to focus and maintain a consistent position on the screen. By emphasizing focus and consistency, the objective to increase concentration over a long period of time is met. 
+
+🎮 GAME 2: CLICK THE RIGHT BUTTON 
+Click the Right Button is a game in iTourette where users have to identify the shape based on the keyword that appears on the top of the screen. As seen on the visualization on the left, when the keyword “triangle” appears, the user must tap on the triangle image button. There is a time limit to each push, and once the user cannot tap within the time limit, the game stops. The motivation of the game is to concentrate and go through as many shape changes as possible. This game requires concentration and agility, which are skills that iTourette hopes to train in its target users. 
+
+🎮 GAME 3: RANDOM CARD MATCHING
+Random Card Matching is a game in iTourette where the user has to remember the location of ten cards and match the identical cards together. The location of cards is randomized for each new game, and the user gets to flip two cards each attempt. When the two cards don’t match, the card will flip to the backside again. The objective of the game is to get all five pairs. The game requires concentration and memory retention, which are key skills that help cognitive control. This game also works with memory retention, which links with the focus mechanism in the brain. 
+
+🎮 GAME 4: IDENTIFY THE RIGHT COLOR 
+Identify the Right Color is a game in iTourette where users have to identify the color of a block among a choice of seven buttons. Once the user has seen the chosen color, the page changes to a second page with buttons with each color’s name. Once the user gets five correct matches in a row, the user wins the game. If the user fails to identify the color in the middle of the round, the game will reset. The game consists of seven colors and loops five times. The game emphasizes memory skills which are training methods to enhance concentration. 
