@@ -3,6 +3,7 @@ package hannah.yoo.itourette;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageButton;
 
 import androidx.annotation.Nullable;
 import yoo.hannah.itourette.R;
@@ -14,6 +15,8 @@ public class Grcg extends AppCompatActivity{
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.grcg);
+        ImageButton img1 = findViewById(R.id.imageButton1);
+        img1.setImageResource(R.drawable.itc);
     }
 }
 
