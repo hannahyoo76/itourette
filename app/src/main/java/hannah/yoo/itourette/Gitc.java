@@ -76,22 +76,22 @@ public class Gitc extends AppCompatActivity {
     public ImageView getColorView(ImageView colorImage,String color){
         switch(color) {
             case "red":
-                colorImage.setImageResource(R.drawable.redSquare);
+                colorImage.setImageResource(R.drawable.redsquare);
                 break;
             case "orange":
-                colorImage.setImageResource(R.drawable.orangeSquare);
+                colorImage.setImageResource(R.drawable.orangesquare);
                 break;
             case "yellow":
-                colorImage.setImageResource(R.drawable.yellowSquare);
+                colorImage.setImageResource(R.drawable.yellowsquare);
                 break;
             case "green":
-                colorImage.setImageResource(R.drawable.greenSquare);
+                colorImage.setImageResource(R.drawable.greensquare);
                 break;
             case "blue":
-                colorImage.setImageResource(R.drawable.blueSquare);
+                colorImage.setImageResource(R.drawable.bluesquare);
                 break;
             case "purple":
-                colorImage.setImageResource(R.drawable.purpleSquare);
+                colorImage.setImageResource(R.drawable.purplesquare);
                 break;
         } // closes the switch statement
 

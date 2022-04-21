@@ -18,7 +18,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image"
+        app:srcCompat="@drawable/cardback"
+        android:scaleType="fitCenter"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
@@ -28,7 +29,8 @@
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageButton1"
-        app:srcCompat="@drawable/image"
+        app:srcCompat="@drawable/cardback"
+        android:scaleType="fitCenter"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <ImageButton
@@ -38,7 +40,8 @@
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="@+id/imageButton1"
         app:layout_constraintTop_toBottomOf="@+id/imageButton1"
-        app:srcCompat="@drawable/image"
+        app:srcCompat="@drawable/cardback"
+        android:scaleType="fitCenter"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <ImageButton
@@ -48,7 +51,8 @@
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="@+id/imageButton2"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        app:srcCompat="@drawable/image"
+        app:srcCompat="@drawable/cardback"
+        android:scaleType="fitCenter"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <ImageButton
@@ -58,7 +62,8 @@
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="@+id/imageButton3"
         app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-        app:srcCompat="@drawable/image"
+        app:srcCompat="@drawable/cardback"
+        android:scaleType="fitCenter"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
@@ -68,7 +73,8 @@
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="@+id/imageButton4"
         app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-        app:srcCompat="@drawable/image"
+        app:srcCompat="@drawable/cardback"
+        android:scaleType="fitCenter"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
@@ -78,7 +84,8 @@
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="@+id/imageButton5"
         app:layout_constraintTop_toBottomOf="@+id/imageButton5"
-        app:srcCompat="@drawable/image"
+        app:srcCompat="@drawable/cardback"
+        android:scaleType="fitCenter"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
@@ -88,7 +95,8 @@
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="@+id/imageButton6"
         app:layout_constraintTop_toBottomOf="@+id/imageButton6"
-        app:srcCompat="@drawable/image"
+        app:srcCompat="@drawable/cardback"
+        android:scaleType="fitCenter"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
@@ -98,7 +106,8 @@
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="@+id/imageButton7"
         app:layout_constraintTop_toBottomOf="@+id/imageButton7"
-        app:srcCompat="@drawable/image"
+        app:srcCompat="@drawable/cardback"
+        android:scaleType="fitCenter"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
@@ -108,7 +117,8 @@
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="@+id/imageButton8"
         app:layout_constraintTop_toBottomOf="@+id/imageButton8"
-        app:srcCompat="@drawable/image"
+        app:srcCompat="@drawable/cardback"
+        android:scaleType="fitCenter"
         tools:ignore="SpeakableTextPresentCheck" />
 
 
