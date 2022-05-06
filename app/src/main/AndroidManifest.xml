@@ -67,7 +67,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="hannah.yoo.itourette.Grcg"
+        <activity android:name="hannah.yoo.itourette.randomCardMatchingGame.Grcg"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.action.VIEW"/>

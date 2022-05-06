@@ -14,7 +14,7 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
-
+// line 18-32 used to splash; change line 22 for class used (getApplicationContext(),_nextclassused_);
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
@@ -23,7 +23,7 @@ public class Splash extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },2000);
+        },2000); // use this
     }
     @Override
     protected void onPause() {
