@@ -17,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import yoo.hannah.itourette.R;
 
+
 public class Gitc extends AppCompatActivity {
 
     // ATTRIBUTES

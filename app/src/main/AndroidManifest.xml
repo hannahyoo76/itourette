@@ -1,5 +1,6 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="yoo.hannah.itourette">
 
     <application
@@ -67,8 +68,23 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="hannah.yoo.itourette.randomCardMatchingGame.GameActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
         <activity android:name="hannah.yoo.itourette.randomCardMatchingGame.Grcg"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="hannah.yoo.itourette.randomCardMatchingGame.ImageAdapter"
+            android:exported="true"
+            tools:ignore="Instantiatable">
             <intent-filter>
                 <action android:name="android.action.VIEW"/>
             </intent-filter>
