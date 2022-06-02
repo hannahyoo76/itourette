@@ -6,7 +6,6 @@ import android.os.PersistableBundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import yoo.hannah.itourette.R;
 public class Gktls extends AppCompatActivity {
 
     @Override

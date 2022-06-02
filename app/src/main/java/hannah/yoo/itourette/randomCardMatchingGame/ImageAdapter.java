@@ -1,16 +1,17 @@
 package hannah.yoo.itourette.randomCardMatchingGame;
 
 import android.content.Context;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
-import yoo.hannah.itourette.R;
+import hannah.yoo.itourette.R;
 
 /**
- * Program Credit: Created by luongvo on 14/05/2017.
+ * Program Reference: luongvo on 14/05/2017.
  */
 
 public class ImageAdapter extends BaseAdapter {
@@ -41,6 +42,7 @@ public class ImageAdapter extends BaseAdapter {
         if (convertView == null) {
             imageView = new ImageView(this.context);
             imageView.setLayoutParams(new GridView.LayoutParams(350, 350));
+            imageView.setForegroundGravity(Gravity.CENTER);
             imageView.setScaleType(ImageView.ScaleType.FIT_XY);
         }
         else imageView = (ImageView)convertView;

@@ -6,7 +6,6 @@ import android.os.Handler;
 
 import android.content.Intent;
 import androidx.annotation.Nullable;
-import yoo.hannah.itourette.R;
 
 public class Splash extends AppCompatActivity {
 

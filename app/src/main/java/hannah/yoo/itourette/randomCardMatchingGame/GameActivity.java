@@ -8,7 +8,7 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.Toast;
-import yoo.hannah.itourette.R;
+import hannah.yoo.itourette.R;
 
 public class GameActivity extends AppCompatActivity {
     //attributes

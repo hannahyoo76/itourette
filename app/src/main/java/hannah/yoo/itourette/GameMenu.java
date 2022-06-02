@@ -9,8 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import hannah.yoo.itourette.IdentifyRightColor.GameGitc;
 import hannah.yoo.itourette.randomCardMatchingGame.Grcg;
-import yoo.hannah.itourette.R;
 public class GameMenu extends AppCompatActivity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -22,7 +22,6 @@ public class GameMenu extends AppCompatActivity {
     ImageButton click_right_button = findViewById(R.id.right_button);
     ImageButton random_card_game = findViewById(R.id.card_game);
     ImageButton identify_the_color = findViewById(R.id.identify_color);
-    TextView tv = findViewById(R.id.games_tv);
 
         keep_line_straight.setOnClickListener(new View.OnClickListener() {
         @Override
@@ -51,7 +50,7 @@ public class GameMenu extends AppCompatActivity {
         identify_the_color.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent itc = new Intent(GameMenu.this, Gitc.class);
+            Intent itc = new Intent(GameMenu.this, GameGitc.class);
             startActivity(itc);
         }
     });

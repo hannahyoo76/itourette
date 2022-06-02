@@ -16,7 +16,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-import yoo.hannah.itourette.R;
+import hannah.yoo.itourette.R;
 
 public class Grcg extends AppCompatActivity{
 

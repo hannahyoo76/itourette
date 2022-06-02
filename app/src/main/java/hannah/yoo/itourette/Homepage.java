@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import yoo.hannah.itourette.R;
+
 
 public class Homepage extends AppCompatActivity{
 

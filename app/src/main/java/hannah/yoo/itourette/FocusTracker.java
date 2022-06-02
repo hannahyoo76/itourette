@@ -5,7 +5,6 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import yoo.hannah.itourette.R;
 
 public class FocusTracker extends AppCompatActivity {
     @Override
