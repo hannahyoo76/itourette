@@ -1,15 +1,17 @@
 package hannah.yoo.itourette.IdentifyRightColor;
 
-
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import hannah.yoo.itourette.R;
+import hannah.yoo.itourette.randomCardMatchingGame.GameActivity;
+
 import java.util.Random;
 
 
@@ -24,8 +26,6 @@ import java.util.Random;
 
 public class GameGitc extends AppCompatActivity {
     // attributes
-    Button correctButton;
-
     ImageView colorsquare;
 
     @Override
@@ -33,23 +33,33 @@ public class GameGitc extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gitc);
 
+        colorsquare = findViewById(R.id.colorImage);
+        int score = 0;
+
+        for(int i=0; i<6; i++) {
+            openGame();
+            score += 1;
+        }
+
+        Toast.makeText(GameGitc.this, "Game Over!" + score, Toast.LENGTH_LONG).show();
+
+    }
+
+    public void openGame(){
+
+        String[] colors = {"red","yellow","orange","green","blue","purple"};
+
         Button redbutton = findViewById(R.id.redbutton);
         Button yellowbutton = findViewById(R.id.yellowbutton);
         Button orangebutton = findViewById(R.id.orangebutton);
         Button greenbutton = findViewById(R.id.greenbutton);
         Button bluebutton = findViewById(R.id.bluebutton);
         Button purplebutton = findViewById(R.id.purplebutton);
-        colorsquare = findViewById(R.id.colorImage);
         Button[] buttonList = {redbutton,yellowbutton,orangebutton,greenbutton,bluebutton,purplebutton};
-        openGame();
-    }
 
+        int score = 0;
 
-
-    public void openGame(){
-
-        String[] colors = {"red","yellow","orange","green","blue","purple"};
-
+        // game is repeated 6 times
         String color = randomizeColor(colors);
         getColorView(color);
         new Handler().postDelayed(new Runnable() {
@@ -58,7 +68,8 @@ public class GameGitc extends AppCompatActivity {
                 disappear();
             }
         }, 3000);
-        //correctButton = helper.userChoice(correctButton, color); // 3. changes the correct button
+
+        checkCorrect(buttonList, color);
     }
 
     /*
@@ -113,5 +124,38 @@ public class GameGitc extends AppCompatActivity {
         }, 3000);
     }
 
+    boolean checkCorrect(Button[] buttonList, String colorChosen){
+        boolean correct = true;
+        Button correctButton;
+        switch(colorChosen){
+            case "red":
+                correctButton = buttonList[0];
+                break;
+            case "yellow":
+                correctButton = buttonList[1];
+                break;
+            case "orange":
+                correctButton = buttonList[2];
+                break;
+            case "green":
+                correctButton = buttonList[3];
+                break;
+            case "blue":
+                correctButton = buttonList[4];
+                break;
+            case "purple":
+                correctButton = buttonList[5];
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + colorChosen);
+        }
 
+        correctButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(GameGitc.this, "Correct Color!", Toast.LENGTH_LONG).show();
+            }
+        });
+        return correct;
+    }
 }
