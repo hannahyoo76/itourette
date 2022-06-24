@@ -55,7 +55,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="hannah.yoo.itourette.IdentifyRightColor.GameGitc"
+        <activity android:name="hannah.yoo.itourette.IdentifyRightColor.GameGitc1"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="hannah.yoo.itourette.IdentifyRightColor.Stat"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.action.VIEW"/>
@@ -97,6 +103,16 @@
                 <action android:name="android.action.VIEW"/>
             </intent-filter>
         </activity>
+
+        <activity android:name="hannah.yoo.itourette.Login"
+            android:exported="true"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>
 

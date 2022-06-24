@@ -36,9 +36,38 @@ public class GameGitc extends AppCompatActivity {
         colorsquare = findViewById(R.id.colorImage);
         int score = 0;
 
-        for(int i=0; i<6; i++) {
-            openGame();
-            score += 1;
+        String[] colors = {"red","yellow","orange","green","blue","purple"};
+
+        Button redbutton = findViewById(R.id.redbutton);
+        Button yellowbutton = findViewById(R.id.yellowbutton);
+        Button orangebutton = findViewById(R.id.orangebutton);
+        Button greenbutton = findViewById(R.id.greenbutton);
+        Button bluebutton = findViewById(R.id.bluebutton);
+        Button purplebutton = findViewById(R.id.purplebutton);
+        Button[] buttonList = {redbutton,yellowbutton,orangebutton,greenbutton,bluebutton,purplebutton};
+
+        for(int i=0; i<3; i++) {
+            // openGame();
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    String color = randomizeColor(colors);
+                    Log.e("GameGitc",color);
+                    getColorView(color,colorsquare);
+                }
+            }, 3000);
+
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    disappear();
+                }
+            }, 3000);
+
+            //checkCorrect(buttonList, color);
+            //score += 1;
+
+
         }
 
         Toast.makeText(GameGitc.this, "Game Over!" + score, Toast.LENGTH_LONG).show();
@@ -57,11 +86,9 @@ public class GameGitc extends AppCompatActivity {
         Button purplebutton = findViewById(R.id.purplebutton);
         Button[] buttonList = {redbutton,yellowbutton,orangebutton,greenbutton,bluebutton,purplebutton};
 
-        int score = 0;
-
         // game is repeated 6 times
         String color = randomizeColor(colors);
-        getColorView(color);
+        getColorView(color, colorsquare);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -86,29 +113,29 @@ public class GameGitc extends AppCompatActivity {
     }
 
     // change the color of the image
-    public ImageView getColorView(String color){
+    public ImageView getColorView(String color, ImageView cq){
         switch(color) {
             case "red":
-                colorsquare.setImageResource(R.drawable.redsquare);
+                cq.setImageResource(R.drawable.redsquare);
                 break;
             case "orange":
-                colorsquare.setImageResource(R.drawable.orangesquare);
+                cq.setImageResource(R.drawable.orangesquare);
                 break;
             case "yellow":
-                colorsquare.setImageResource(R.drawable.yellowsquare);
+                cq.setImageResource(R.drawable.yellowsquare);
                 break;
             case "green":
-                colorsquare.setImageResource(R.drawable.greensquare);
+                cq.setImageResource(R.drawable.greensquare);
                 break;
             case "blue":
-                colorsquare.setImageResource(R.drawable.bluesquare);
+                cq.setImageResource(R.drawable.bluesquare);
                 break;
             case "purple":
-                colorsquare.setImageResource(R.drawable.purplesquare);
+                cq.setImageResource(R.drawable.purplesquare);
                 break;
         } // closes the switch statement
 
-        return colorsquare;
+        return cq;
     }
 
     public void disappear() {

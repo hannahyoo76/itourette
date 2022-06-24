@@ -10,12 +10,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import hannah.yoo.itourette.IdentifyRightColor.GameGitc;
+import hannah.yoo.itourette.IdentifyRightColor.GameGitc1;
 import hannah.yoo.itourette.randomCardMatchingGame.Grcg;
 public class GameMenu extends AppCompatActivity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+    int cnt =0 ;
     setContentView(R.layout.gamemenu);
 
     ImageButton keep_line_straight = findViewById(R.id.line_straight);
@@ -50,7 +51,8 @@ public class GameMenu extends AppCompatActivity {
         identify_the_color.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent itc = new Intent(GameMenu.this, GameGitc.class);
+            Intent itc = new Intent(GameMenu.this, GameGitc1.class);
+            itc.putExtra("count", cnt);
             startActivity(itc);
         }
     });
