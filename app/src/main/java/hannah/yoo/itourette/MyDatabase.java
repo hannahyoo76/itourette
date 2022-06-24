@@ -32,17 +32,16 @@ public class MyDatabase extends AppCompatActivity {
 
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://itourette-default-rtdb.firebaseio.com/");
 
-        DatabaseReference myRef = database.getReference("user/");
+        DatabaseReference myRef = database.getReference("Level/");
        // myRef.child("Level/D2/").setValue("aa");
-        myRef.child("123").addValueEventListener(new ValueEventListener() {
+        myRef.child("D1").addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
-                for (DataSnapshot test : dataSnapshot.getChildren()) {
-                    User usera = test.getValue(User.class);
-                    tv.setText(usera.username);
-                }
+                Log.e("DATA >> ", dataSnapshot.toString());
+                Level lv = dataSnapshot.getValue(Level.class);
+                tv.setText(String.valueOf(lv.Time));
 
             }
 
