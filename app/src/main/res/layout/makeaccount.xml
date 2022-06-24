@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Your Account"
+        android:textSize="35dp"
+        android:layout_alignParentTop = "true"
+        android:layout_centerHorizontal="true"/>
+
+    //email
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailSetlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:id="@+id/emailSet"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    //username
+    <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/usernameSetlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Username"
+        android:id="@+id/usernameSet"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    //password
+    <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/passwordSetlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:id="@+id/passwordSet"
+        />
+</com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/makeAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Account"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/textview"
+        android:layout_toStartOf="@+id/textview"/>
+
+</LinearLayout>

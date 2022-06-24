@@ -11,12 +11,36 @@
         android:theme="@style/Theme.ITourette"
         android:fullBackupContent="false"
         android:allowBackup="false">
+
         <activity
             android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Signup"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MyDatabase"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
             </intent-filter>
         </activity>
 
@@ -101,15 +125,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.action.VIEW"/>
-            </intent-filter>
-        </activity>
-
-        <activity android:name="hannah.yoo.itourette.Login"
-            android:exported="true"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-
             </intent-filter>
         </activity>
 

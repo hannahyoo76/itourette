@@ -16,7 +16,11 @@
         <entry key="app/src/main/res/layout/grcg.xml" value="0.2747560436637257" />
         <entry key="app/src/main/res/layout/homepage.xml" value="0.25" />
         <entry key="app/src/main/res/layout/information.xml" value="0.19021739130434784" />
+        <entry key="app/src/main/res/layout/login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/makeaccount.xml" value="0.25" />
         <entry key="app/src/main/res/layout/splash.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/stat.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/test.xml" value="0.3098958333333333" />
       </map>
     </option>
   </component>

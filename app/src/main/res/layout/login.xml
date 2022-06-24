@@ -15,6 +15,34 @@
         android:layout_alignParentTop = "true"
         android:layout_centerHorizontal="true"/>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emaillayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/emaillayout"
+        android:layout_marginTop="80dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <TextView
         android:layout_width = "wrap_content"
         android:layout_height = "wrap_content"
@@ -25,50 +53,20 @@
         android:textColor = "@color/purple_500"
         android:textSize = "25dp" />
 
-    <EditText
-        android:id="@+id/userName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/icon"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="46dp"
-        android:focusable="true"
-        android:hint="Enter Name"
-        android:textColorHighlight="green"
-        android:textColorHint="@color/purple_500" />
-
-
     <ImageView
-        android:id = "@+id/icon"
+        android:id="@+id/icon"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_below="@+id/logoname"
-        android:src="@drawable/iconfinal"
-        android:layout_centerHorizontal="true"/>
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:layout_below="@+id/userName"
-        android:layout_alignParentLeft = "true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight = "@+id/userName"
-        android:layout_alignEnd = "@+id/userName"
-        android:textColorHint="@color/purple_500"
-        android:hint="Password" />
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/iconfinal" />
 
     <TextView
         android:id="@+id/attempts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Attempts Left: "
-        android:layout_below="@+id/password"
+        android:layout_below="@+id/passwordlayout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textSize="20dp"/>
@@ -99,8 +97,9 @@
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go Back"
+        android:text="Make Account"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/textview"
         android:layout_toEndOf="@+id/textview"/>
+
 </RelativeLayout>
