@@ -3,6 +3,7 @@ package hannah.yoo.itourette.IdentifyRightColor;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.security.identity.EphemeralPublicKeyNotFoundException;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -32,19 +33,16 @@ public class GameGitc1 extends AppCompatActivity {
         Button greenbutton = findViewById(R.id.greenbutton);
         Button bluebutton = findViewById(R.id.bluebutton);
         Button purplebutton = findViewById(R.id.purplebutton);
+        GameGitc gg = new GameGitc();
+        ImageView colorsquare = findViewById(R.id.colorImage);
+        String[] colors = {"red","yellow","orange","green","blue","purple"};
 
+        String color = gg.randomizeColor(colors);
+        gg.getColorView(color,colorsquare);
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-
                 if (finalCnt < 5) {
-                    GameGitc gg = new GameGitc();
-                    ImageView colorsquare = findViewById(R.id.colorImage);
-                    String[] colors = {"red","yellow","orange","green","blue","purple"};
-
-                    String color = gg.randomizeColor(colors);
-                    gg.getColorView(color,colorsquare);
-
                     Intent intent = new Intent(getApplicationContext(), GameGitc1.class);
                     intent.putExtra("count", finalCnt);
                     startActivity(intent);
@@ -56,7 +54,6 @@ public class GameGitc1 extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 }
-
             }
         },3000); // use this
     }
