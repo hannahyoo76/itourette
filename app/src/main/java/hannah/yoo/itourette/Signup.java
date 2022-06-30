@@ -52,7 +52,7 @@ public class Signup extends AppCompatActivity {
                                     // Sign in success, update UI with the signed-in user's information
                                     Log.d(" s i", "createUserWithEmail:success");
                                     FirebaseUser user = mAuth.getCurrentUser();
-                                    User userA = new User(email, password, username, user.getUid());
+                                    User userA = new User(email, password, username, user.getUid(), "D0");
                                     saveUser(userA);
                                 } else {
                                     // If sign in fails, display a message to the user.

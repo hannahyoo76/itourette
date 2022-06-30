@@ -13,7 +13,7 @@
         android:allowBackup="false">
 
         <activity
-            android:name=".GameMenu"
+            android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.action.MAIN"/>
@@ -35,6 +35,15 @@
                 <action android:name="android.action.VIEW"/>
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".GameMenu"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".Signup"
             android:exported="true">

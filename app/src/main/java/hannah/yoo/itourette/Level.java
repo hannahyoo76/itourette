@@ -17,9 +17,25 @@ public class Level {
     }
 
     public String returnLevel(String curLevel){
-        String nextLevel = "D1";
-
-
+        String currentLevel = curLevel;
+        String nextLevel = "";
+        switch(currentLevel){
+            case "D0":
+                nextLevel = "D1";
+                break;
+            case "D1":
+                nextLevel = "D2";
+                break;
+            case "D2":
+                nextLevel = "D3";
+                break;
+            case "D3":
+                nextLevel = "D4";
+                break;
+            case "D4":
+                nextLevel = "D5";
+                break;
+        }
         return nextLevel;
     }
 
