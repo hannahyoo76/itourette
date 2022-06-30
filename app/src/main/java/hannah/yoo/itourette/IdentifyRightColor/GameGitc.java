@@ -151,6 +151,32 @@ public class GameGitc extends AppCompatActivity {
         }, 3000);
     }
 
+    public int getColorIndex(String correctColor) {
+        int colorIndex = 0;
+        switch(correctColor) {
+            case "red":
+                colorIndex =0;
+                break;
+            case "yellow":
+                colorIndex = 1;
+                break;
+            case "orange":
+                colorIndex = 2;
+                break;
+            case "green":
+                colorIndex = 3;
+                break;
+            case "blue":
+                colorIndex = 4;
+                break;
+            case "purple":
+                colorIndex = 5;
+                break;
+        }
+        return colorIndex;
+    }
+
+
     boolean checkCorrect(Button[] buttonList, String colorChosen){
         boolean correct = true;
         Button correctButton;

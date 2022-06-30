@@ -17,7 +17,7 @@ public class Stat extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.stat);
-        TextView tv = findViewById(R.id.score);
+        TextView tv = findViewById(R.id.scoreValue);
         int a = getIntent().getIntExtra("count", 0);
         String tmp = Integer.toString(a);
         tv.setText(tmp);

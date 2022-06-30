@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.security.identity.EphemeralPublicKeyNotFoundException;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,12 +20,11 @@ public class GameGitc1 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         int cnt = getIntent().getIntExtra("count",0);
-        cnt ++;
         super.onCreate(savedInstanceState);
+        cnt++;
 
         setContentView(R.layout.gitc);
 
-// line 18-32 used to splash; change line 22 for class used (getApplicationContext(),_nextclassused_);
         Handler handler = new Handler();
         int finalCnt = cnt;
 
@@ -33,12 +34,34 @@ public class GameGitc1 extends AppCompatActivity {
         Button greenbutton = findViewById(R.id.greenbutton);
         Button bluebutton = findViewById(R.id.bluebutton);
         Button purplebutton = findViewById(R.id.purplebutton);
+
         GameGitc gg = new GameGitc();
+
         ImageView colorsquare = findViewById(R.id.colorImage);
+
+        Button[] buttons = {redbutton, yellowbutton,orangebutton,greenbutton,bluebutton,purplebutton};
         String[] colors = {"red","yellow","orange","green","blue","purple"};
 
-        String color = gg.randomizeColor(colors);
-        gg.getColorView(color,colorsquare);
+        // 1. randomize correct color
+        String correctColor = gg.randomizeColor(colors);
+
+        // 2. declare and initialize correct button
+        Button correctButton;
+
+        int correctColorIndex = gg.getColorIndex(correctColor);
+
+        correctButton = buttons[correctColorIndex];
+
+        gg.getColorView(correctColor,colorsquare);
+
+        correctButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(GameGitc1.this, "Correct Color: " + correctColor + " !",Toast.LENGTH_LONG).show();
+            }
+        });
+
+        // checkCorrect(userColor, correctColor);
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -53,12 +76,10 @@ public class GameGitc1 extends AppCompatActivity {
                     intent.putExtra("count", finalCnt);
                     startActivity(intent);
                     finish();
+                    }
                 }
-            }
-        },3000); // use this
-    }
-
-
+            },5000); // use this
+        }
 
     }
 
