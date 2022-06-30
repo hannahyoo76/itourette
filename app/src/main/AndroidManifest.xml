@@ -28,13 +28,6 @@
                 <action android:name="android.action.VIEW"/>
             </intent-filter>
         </activity>
-        <activity
-            android:name=".IdentifyRightColor.Empty"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.action.VIEW"/>
-            </intent-filter>
-        </activity>
 
         <activity
             android:name=".GameMenu"
