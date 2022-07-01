@@ -17,9 +17,15 @@ public class Stat extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.stat);
-        TextView tv = findViewById(R.id.scoreValue);
+        TextView tv = findViewById(R.id.testRep);
+        TextView real = findViewById(R.id.scoreValue);
         int a = getIntent().getIntExtra("count", 0);
+        int b = getIntent().getIntExtra("correctCnt",0);
         String tmp = Integer.toString(a);
-        tv.setText(tmp);
+        String act = Integer.toString(b);
+        tv.setText(tmp + " repetitions");
+        real.setText(act + "/5");
+
+
     }
 }

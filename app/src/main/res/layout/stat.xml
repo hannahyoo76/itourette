@@ -22,6 +22,14 @@
         android:textAlignment="center"
         android:textSize="35dp" />
     <TextView
+        android:id="@+id/testRep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="35dp" />
+    <TextView
         android:id="@+id/scoreValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
