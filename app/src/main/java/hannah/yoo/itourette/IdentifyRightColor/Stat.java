@@ -20,7 +20,7 @@ public class Stat extends AppCompatActivity {
         TextView tv = findViewById(R.id.testRep);
         TextView real = findViewById(R.id.scoreValue);
         int a = getIntent().getIntExtra("count", 0);
-        int b = getIntent().getIntExtra("correctCnt",0);
+        int b = getIntent().getIntExtra("cntCr",0);
         String tmp = Integer.toString(a);
         String act = Integer.toString(b);
         tv.setText(tmp + " repetitions");
