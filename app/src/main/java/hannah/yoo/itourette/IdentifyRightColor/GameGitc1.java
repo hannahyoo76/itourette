@@ -27,13 +27,12 @@ import hannah.yoo.itourette.R;
 import hannah.yoo.itourette.User;
 
 public class GameGitc1 extends AppCompatActivity {
-
+    int flag = 0;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        int cnt = getIntent().getIntExtra("count",0);
-
 
         super.onCreate(savedInstanceState);
+        int cnt = getIntent().getIntExtra("count",0);
         cnt++;
 
 
@@ -72,23 +71,10 @@ public class GameGitc1 extends AppCompatActivity {
 
         // 4. response when correct button is clicked
         correctButton.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                FirebaseDatabase database = FirebaseDatabase.getInstance("https://itourette-default-rtdb.firebaseio.com/");
-                DatabaseReference myRef = database.getReference("user");
-                myRef.child("D0DHRMd0kGPv9PNAoMJhguXHshO2").addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        // This method is called once with the initial value and again
-                        // whenever data at this location is updated.
-                        User user = dataSnapshot.getValue(User.class);
-                    }
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
-                myRef.setValue(myRef)
+                flag = 1;
             }
         });
 
@@ -98,14 +84,18 @@ public class GameGitc1 extends AppCompatActivity {
                 if (finalCnt < 5) {
                     Intent intent = new Intent(getApplicationContext(), GameGitc1.class);
                     intent.putExtra("count", finalCnt);
-
+                    int cntCr = getIntent().getIntExtra("cntCr",0);
+                    if (flag == 1) cntCr ++;
+                    intent.putExtra("cntCr", cntCr);
                     startActivity(intent);
                     finish();
                 }
                 else {
                     Intent intent = new Intent(getApplicationContext(), Stat.class);
                     intent.putExtra("count", finalCnt);
-                  //  intent.putExtra("correctCnt",finalCorrectCnt);
+                    int cntCr = getIntent().getIntExtra("cntCr",0);
+                    if (flag == 1) cntCr ++;
+                    intent.putExtra("cntCr", cntCr);
                     startActivity(intent);
                     finish();
                     }
