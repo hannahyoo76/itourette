@@ -9,13 +9,30 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Click the button when you see the red dot" />
+        android:gravity="center_horizontal"
+        android:text="Focus Tracker"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35dp" />
 
-    <ImageButton
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="130dp"
-        android:layout_marginBottom="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Tap the button when you see the red dot" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:srcCompat="@drawable/reddot"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap here"
+        />
 
 </LinearLayout>

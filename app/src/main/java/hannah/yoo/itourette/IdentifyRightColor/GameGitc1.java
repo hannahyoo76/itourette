@@ -88,7 +88,7 @@ public class GameGitc1 extends AppCompatActivity {
 
                     }
                 });
-                myRef.setValue(myRef)
+                myRef.setValue(myRef);
             }
         });
 

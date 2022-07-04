@@ -1,3 +1,5 @@
+package hannah.yoo.itourette;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -5,9 +7,6 @@ import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import hannah.yoo.itourette.FocusTracker;
-import hannah.yoo.itourette.R;
 
 public class FocusTrackerDirect extends AppCompatActivity {
     @Override

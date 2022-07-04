@@ -12,5 +12,8 @@ public class FocusTracker extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.focustracker);
+
+        //1. firebase 코드 여기서 불러오기
+        //2.
     }
 }
