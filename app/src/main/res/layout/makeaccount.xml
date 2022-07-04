@@ -6,12 +6,15 @@
 
     <TextView
         android:id="@+id/textview"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="Make Your Account"
-        android:textSize="35dp"
+        android:fontFamily="@font/franxurterfat"
+        android:textSize="40dp"
         android:layout_alignParentTop = "true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
 
     //email
     <com.google.android.material.textfield.TextInputLayout
@@ -66,6 +69,7 @@
         android:text="Make Account"
         android:layout_alignParentBottom="true"
         android:layout_toLeftOf="@+id/textview"
-        android:layout_toStartOf="@+id/textview"/>
+        android:layout_toStartOf="@+id/textview"
+        android:fontFamily="@font/franxurtermed"/>
 
 </LinearLayout>

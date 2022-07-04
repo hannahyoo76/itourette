@@ -11,8 +11,9 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="32sp"
+        android:textSize="40sp"
         android:textColor="@color/white"
+        android:fontFamily="@font/franxurterfat"
         android:text="ANALYSIS"/>
     <CalendarView
         android:id="@+id/calendarView"

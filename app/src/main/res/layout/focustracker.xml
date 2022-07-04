@@ -1,38 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/franxurterfat"
         android:gravity="center_horizontal"
         android:text="Focus Tracker"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="35dp" />
+        android:textColor="@color/white"
+        android:textSize="45dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:fontFamily="@font/franxurtermed"
+        android:text="Tap the red button when you hear the beep sound"
         android:textAlignment="center"
-        android:text="Tap the button when you see the red dot" />
+        android:textColor="@color/white"
+        android:textSize="30dp" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/reddot"/>
-
-    <Button
+    <ImageButton
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tap here"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:padding="50dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/reddot"
+
         />
+
 
 </LinearLayout>

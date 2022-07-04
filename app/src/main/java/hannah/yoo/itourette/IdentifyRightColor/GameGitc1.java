@@ -100,7 +100,7 @@ public class GameGitc1 extends AppCompatActivity {
                     finish();
                     }
                 }
-            },5000); // use this
+            },3000); // use this
         }
 
     }

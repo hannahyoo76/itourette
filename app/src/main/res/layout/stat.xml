@@ -19,14 +19,16 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="Correct Matches:"
+        android:fontFamily="@font/franxurterfat"
         android:textAlignment="center"
-        android:textSize="35dp" />
+        android:textSize="45dp" />
     <TextView
         android:id="@+id/testRep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="TextView"
+        android:fontFamily="@font/franxurtermed"
         android:textAlignment="center"
         android:textSize="35dp" />
     <TextView
@@ -35,6 +37,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="TextView"
+        android:fontFamily="@font/franxurtermed"
         android:textAlignment="center"
         android:textSize="35dp" />
 </LinearLayout>

@@ -10,8 +10,11 @@
         android:id="@+id/gctrb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="32sp"
-        android:text="Click the Right Button"/>
+        android:textSize="45dp"
+        android:textColor="@color/white"
+        android:text="Click the Right Button"
+        android:fontFamily="@font/franxurterfat"
+        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

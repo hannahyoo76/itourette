@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
+    android:background="@color/purple_700"
     android:gravity="center"
     android:orientation="vertical">
     <TextView
@@ -13,14 +13,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
+        android:textSize="50dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/franxurterfat"
         android:text="@string/games"/>
 
     <ImageButton
         android:id="@+id/line_straight"
         android:layout_width="match_parent"
         android:layout_height="130dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="30dp"
+        android:scaleType="fitXY"
+        android:background="@color/white"
         app:srcCompat="@drawable/ktls"
         tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
 
@@ -28,26 +33,32 @@
         android:id="@+id/right_button"
         android:layout_width="match_parent"
         android:layout_height="130dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="17dp"
         android:layout_marginBottom="30dp"
         app:srcCompat="@drawable/ctrb"
+        android:scaleType="fitXY"
+        android:background="@color/white"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/card_game"
         android:layout_width="match_parent"
         android:layout_height="130dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="17dp"
         android:layout_marginBottom="30dp"
         app:srcCompat="@drawable/rcg"
+        android:scaleType="fitXY"
+        android:background="@color/white"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/identify_color"
         android:layout_width="match_parent"
         android:layout_height="130dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="25dp"
         app:srcCompat="@drawable/itc"
+        android:scaleType="fitXY"
+        android:background="@color/white"
         tools:ignore="SpeakableTextPresentCheck" />
 </LinearLayout>

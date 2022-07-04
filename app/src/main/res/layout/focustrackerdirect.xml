@@ -13,7 +13,8 @@
         android:text="Welcome to Focus Tracker"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="30dp" />
+        android:fontFamily="@font/franxurterfat"
+        android:textSize="35dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -21,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textAlignment="center"
+        android:fontFamily="@font/franxurtermed"
         android:text="The test will start as soon as you tap on the start button" />
 
     <Button
@@ -28,6 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Start"
+        android:fontFamily="@font/franxurtermed"
         />
 
 </LinearLayout>

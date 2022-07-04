@@ -11,7 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:textSize="35dp"
+        android:textSize="45dp"
+        android:fontFamily="@font/franxurterfat"
+        android:textColor="@color/black"
         android:layout_alignParentTop = "true"
         android:layout_centerHorizontal="true"/>
 
@@ -24,6 +26,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Email" />
@@ -48,10 +51,11 @@
         android:layout_height = "wrap_content"
         android:text = "iTourette"
         android:id = "@+id/logoname"
+        android:fontFamily="@font/franxurtermed"
         android:layout_below = "@+id/textview"
         android:layout_centerHorizontal = "true"
-        android:textColor = "@color/purple_500"
-        android:textSize = "25dp" />
+        android:textColor = "@color/purple_700"
+        android:textSize = "30dp" />
 
     <ImageView
         android:id="@+id/icon"
@@ -69,7 +73,9 @@
         android:layout_below="@+id/passwordlayout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="20dp"/>
+        android:textColor="@color/black"
+        android:fontFamily="@font/franxurtermed"
+        android:textSize="35dp"/>
 
     <TextView
         android:id="@+id/counts"
@@ -81,7 +87,9 @@
         android:layout_alignBottom="@+id/attempts"
         android:layout_alignParentEnd = "true"
         android:layout_toEndOf="@+id/logoname"
-        android:textSize = "20dp"
+        android:textSize = "35dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/franxurtermed"
         android:layout_toRightOf="@+id/logoname" />
 
     <Button
@@ -91,7 +99,9 @@
         android:text="Log In"
         android:layout_alignParentBottom="true"
         android:layout_toLeftOf="@+id/textview"
-        android:layout_toStartOf="@+id/textview"/>
+        android:layout_toStartOf="@+id/textview"
+        android:fontFamily="@font/franxurtermed"
+        android:textSize="20dp"/>
 
     <Button
         android:id="@+id/backButton"
@@ -100,6 +110,8 @@
         android:text="Make Account"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/textview"
+        android:fontFamily="@font/franxurtermed"
+        android:textSize="15dp"
         android:layout_toEndOf="@+id/textview"/>
 
 </RelativeLayout>
