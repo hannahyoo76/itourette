@@ -8,57 +8,72 @@
     android:background="@color/purple_700"
     android:gravity="center"
     android:orientation="vertical">
-    <TextView
-        android:id="@+id/games_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="50dp"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/franxurterfat"
-        android:text="@string/games"/>
 
-    <ImageButton
-        android:id="@+id/line_straight"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="30dp"
-        android:scaleType="fitXY"
-        android:background="@color/white"
-        app:srcCompat="@drawable/ktls"
-        tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+        android:layout_height="match_parent">
 
-    <ImageButton
-        android:id="@+id/right_button"
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginBottom="30dp"
-        app:srcCompat="@drawable/ctrb"
-        android:scaleType="fitXY"
-        android:background="@color/white"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
 
-    <ImageButton
-        android:id="@+id/card_game"
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginBottom="30dp"
-        app:srcCompat="@drawable/rcg"
-        android:scaleType="fitXY"
-        android:background="@color/white"
-        tools:ignore="SpeakableTextPresentCheck" />
+            <TextView
+                android:id="@+id/games_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/franxurterfat"
+                android:text="           GAMES"
+                android:textColor="@color/white"
+                android:textSize="50dp" />
 
-    <ImageButton
-        android:id="@+id/identify_color"
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginBottom="25dp"
-        app:srcCompat="@drawable/itc"
-        android:scaleType="fitXY"
-        android:background="@color/white"
-        tools:ignore="SpeakableTextPresentCheck" />
+            <ImageButton
+                android:id="@+id/card_game"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/rcg"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/line_straight"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ktls"
+                tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/right_button"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ctrb"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/identify_color"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="25dp"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/itc"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>
