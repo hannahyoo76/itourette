@@ -69,6 +69,17 @@ public class GameGitc1 extends AppCompatActivity {
         // 3. get the color view
         gg.getColorView(correctColor,colorsquare);
 
+        Handler hand2 = new Handler();
+
+        hand2.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                colorsquare.setImageResource(R.drawable.periwinkle);
+            }
+        },2000);
+
+
+
         // 4. response when correct button is clicked
         correctButton.setOnClickListener(new View.OnClickListener() {
 
@@ -100,7 +111,7 @@ public class GameGitc1 extends AppCompatActivity {
                     finish();
                     }
                 }
-            },3000); // use this
+            },5000); // use this
         }
 
     }
