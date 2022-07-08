@@ -74,7 +74,7 @@ public class GameGitc1 extends AppCompatActivity {
         hand2.postDelayed(new Runnable() {
             @Override
             public void run() {
-                colorsquare.setImageResource(R.drawable.periwinkle);
+                colorsquare.setImageResource(R.drawable.green);
             }
         },2000);
 
