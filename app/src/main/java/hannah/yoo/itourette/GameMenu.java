@@ -4,12 +4,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import hannah.yoo.itourette.IdentifyRightColor.GameGitc;
+import hannah.yoo.itourette.ClicktheRightButton.Gctrb;
+import hannah.yoo.itourette.ClicktheRightButton.Gctrb1;
 import hannah.yoo.itourette.IdentifyRightColor.GameGitc1;
 import hannah.yoo.itourette.randomCardMatchingGame.Grcg;
 public class GameMenu extends AppCompatActivity {
@@ -35,7 +35,7 @@ public class GameMenu extends AppCompatActivity {
         click_right_button.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent crb = new Intent(GameMenu.this, Gctrb.class);
+            Intent crb = new Intent(GameMenu.this, Gctrb1.class);
             startActivity(crb);
         }
     });

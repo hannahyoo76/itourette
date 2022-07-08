@@ -13,13 +13,25 @@
         android:textSize="45dp"
         android:textColor="@color/white"
         android:text="Click the Right Button"
-        android:fontFamily="@font/franxurterfat"
+        android:fontFamily="@font/franxurterfat"/>
+
+        <TextView
+            android:id="@+id/shapeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45dp"
+            android:textColor="@color/black"
+            android:text="shape"
+            android:fontFamily="@font/franxurtermed"
+            />
         />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,7 +40,7 @@
             android:orientation="horizontal"
             >
             <ImageButton
-                android:id="@+id/focus_tracker"
+                android:id="@+id/triangle"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center_vertical"
@@ -37,7 +49,7 @@
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/triangle"/>
             <ImageButton
-                android:id="@+id/games"
+                android:id="@+id/diamond"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center_vertical"
@@ -53,7 +65,7 @@
             android:gravity="center"
             android:orientation="horizontal">
             <ImageButton
-                android:id="@+id/analysis"
+                android:id="@+id/square"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center_vertical"
@@ -62,7 +74,7 @@
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/square"/>
             <ImageButton
-                android:id="@+id/information"
+                android:id="@+id/circle"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center_vertical"

@@ -206,26 +206,5 @@ public class GameGitc extends AppCompatActivity {
         });
         return correct;
     }
-
-    public List<Button> wrongButtons(int colorIndex, Button[] buttons) {
-        List<Button> wrongButtons = new ArrayList<>();
-
-        for(int i = 0; i<5; i++) {
-            if(i != colorIndex) {
-                wrongButtons.add(buttons[i]);
-            }
-        }
-        return wrongButtons;
-    }
-
-    public boolean wrong(List<Button> wrongButtons) {
-        boolean wrong = false;
-        for(Button b: wrongButtons) {
-            if(b.isSelected()) {
-                wrong = true;
-            }
-        }
-        return wrong;
-    }
 }
 

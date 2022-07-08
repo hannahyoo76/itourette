@@ -20,7 +20,7 @@ public class Stat extends AppCompatActivity {
         TextView real = findViewById(R.id.scoreValue);
         int b = getIntent().getIntExtra("cntCr",0);
         String act = Integer.toString(b);
-        real.setText(act + "/5");
+        real.setText(act + "/10");
 
 
     }

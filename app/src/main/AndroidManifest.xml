@@ -122,7 +122,21 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="hannah.yoo.itourette.Gctrb"
+        <activity android:name="hannah.yoo.itourette.ClicktheRightButton.Gctrb"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="hannah.yoo.itourette.ClicktheRightButton.Gctrb1"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="hannah.yoo.itourette.ClicktheRightButton.GctrbStat"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.action.VIEW"/>

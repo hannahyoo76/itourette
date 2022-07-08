@@ -15,13 +15,12 @@ public class FocusTracker extends AppCompatActivity {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Button buttonStart = findViewById(R.id.buttonStart);
-
         setContentView(R.layout.focustracker);
 
-        audio = MediaPlayer.create(FocusTracker.this,R.raw.d4); // 일단은 d1 임시로 해놨어요
+        audio = MediaPlayer.create(FocusTracker.this,R.raw.d1); // 일단은 d1 임시로 해놨어요
 
-        /*
+        Button buttonStart = findViewById(R.id.buttonStart);
+
         // Visibility invisible 로 바꾸기 once button is clicked
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,7 +28,6 @@ public class FocusTracker extends AppCompatActivity {
                 buttonStart.setVisibility(View.INVISIBLE);
             }
         });
-        */
 
 
         //1. firebase 코드 여기서 불러오기
