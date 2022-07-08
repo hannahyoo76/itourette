@@ -41,14 +41,6 @@ public class GameGitc extends AppCompatActivity {
 
         String[] colors = {"red","yellow","orange","green","blue","purple"};
 
-        Button redbutton = findViewById(R.id.redbutton);
-        Button yellowbutton = findViewById(R.id.yellowbutton);
-        Button orangebutton = findViewById(R.id.orangebutton);
-        Button greenbutton = findViewById(R.id.greenbutton);
-        Button bluebutton = findViewById(R.id.bluebutton);
-        Button purplebutton = findViewById(R.id.purplebutton);
-        Button[] buttonList = {redbutton,yellowbutton,orangebutton,greenbutton,bluebutton,purplebutton};
-
         for(int i=0; i<3; i++) {
             // openGame();
             new Handler().postDelayed(new Runnable() {

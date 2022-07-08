@@ -40,7 +40,7 @@ public class Homepage extends AppCompatActivity{
         focus_tracker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent hp = new Intent(Homepage.this, FocusTrackerDirect.class);
+                Intent hp = new Intent(Homepage.this, FocusTracker.class);
                 startActivity(hp);
             }
         });

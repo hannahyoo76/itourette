@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:fontFamily="@font/franxurtermed"
-        android:text="Tap the red button when you hear the beep sound"
+        android:text="Start the tracker by clicking the start button. Tap the red button when you hear the beep sound."
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="30dp" />
@@ -38,6 +38,15 @@
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/reddot"
 
+        />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:fontFamily="@font/franxurtermed"
+        android:onClick="PlayIT"
         />
 
 

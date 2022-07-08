@@ -30,7 +30,7 @@
         </activity>
 
         <activity
-            android:name=".FocusTrackerDirect"
+            android:name=".FocusTracker"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.action.VIEW"/>
@@ -80,16 +80,6 @@
                 <action android:name="android.action.VIEW"/>
             </intent-filter>
         </activity>
-
-        <activity android:name="hannah.yoo.itourette.FocusTracker"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.action.VIEW"/>
-            </intent-filter>
-        </activity>
-
-
-
         <activity android:name="hannah.yoo.itourette.IdentifyRightColor.GameGitc1"
             android:exported="true">
             <intent-filter>
