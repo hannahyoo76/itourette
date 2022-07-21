@@ -5,22 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/info"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/Text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Tourette Syndrome is a neurological condition which causes individuals to have
-         “tics.” Tics include unwanted sounds or repetitive movement that include shoulder, mouth,
-         or eye movement. While Tourette Syndrome is a rare neurological condition, it is most commonly
-         identified in children during the developmental years." />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:text="About Tourette Syndrome"
+                android:fontFamily="@font/franxurterfat"
+                android:textSize="35dp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/info"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="16dp" />
+            <TextView
+                android:id="@+id/Text"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/franxurtermed"
+                android:text="While 2020 statistics show that approximately 10,000 Korean citizens struggle with Tourette Syndrome, a nervous system disorder that causes involuntary movement and unwanted sounds, only one patient was officially registered as handicapped. Particularly focusing on patients under the age of 18, many children in their developing years often struggle with the stigmatization of the disorder due to the lack of awareness. In the era of COVID-19 where digital applications are highly accessible with less cost, iTourette was a digitized software based on programming knowledge and skills. Applications allow more interaction than videos and greater accessibility than webpages which contributed to the decision of software developing. Using the application with easy steps to download on device, the motivation was to raise awareness and improve concentration levels of children diagnosed with the illness in South Korea.
+" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
