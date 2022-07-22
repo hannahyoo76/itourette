@@ -4,15 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.325" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1859375" />
         <entry key="app/src/main/res/drawable/ktls.xml" value="0.246875" />
         <entry key="app/src/main/res/layout/analysis.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/empty.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/focustracker.xml" value="0.271286231884058" />
         <entry key="app/src/main/res/layout/focustrackerdirect.xml" value="0.25" />
         <entry key="app/src/main/res/layout/focustrackerpg.xml" value="0.16927083333333334" />
-        <entry key="app/src/main/res/layout/gamemenu.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/gamemenu.xml" value="0.375" />
         <entry key="app/src/main/res/layout/gctrb.xml" value="0.19021739130434784" />
-        <entry key="app/src/main/res/layout/gitc.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/gctrbstat.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/gitc.xml" value="0.375" />
         <entry key="app/src/main/res/layout/gitcbutton.xml" value="0.25" />
         <entry key="app/src/main/res/layout/gitccolor.xml" value="0.25" />
         <entry key="app/src/main/res/layout/gktls.xml" value="0.1082427536231884" />
@@ -22,7 +24,7 @@
         <entry key="app/src/main/res/layout/login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/makeaccount.xml" value="0.25" />
         <entry key="app/src/main/res/layout/splash.xml" value="0.15070921985815602" />
-        <entry key="app/src/main/res/layout/stat.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/stat.xml" value="0.25" />
         <entry key="app/src/main/res/layout/test.xml" value="0.3098958333333333" />
       </map>
     </option>

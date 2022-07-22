@@ -41,7 +41,6 @@ public class Login extends AppCompatActivity {
 
 
         b2 = (Button) findViewById(R.id.backButton);
-        tx1 = (TextView) findViewById(R.id.counts);
         tx1.setVisibility(View.GONE);
 
         b1.setOnClickListener(new View.OnClickListener() {
