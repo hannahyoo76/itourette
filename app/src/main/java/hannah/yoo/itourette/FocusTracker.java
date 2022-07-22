@@ -21,6 +21,7 @@ import java.util.TimerTask;
 public class FocusTracker extends AppCompatActivity {
     MediaPlayer audio;
     private FirebaseAuth mAuth;
+    String tmp ;
 
 
     @Override
@@ -52,25 +53,22 @@ public class FocusTracker extends AppCompatActivity {
 
         //2. tracker 하기 (first example)
 
-        String tmp ;
 
                 trackButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         // flag?
                        long t2 = System.currentTimeMillis();
-                       tmp = t2;
+                       tmp = String.valueOf(t2);
+                        Log.e("DIFF > ", String.valueOf(t2)); //1658469784567 1658469812433 1658469816030
                         // add
                     }
                 });
-
-        long diff =  t2[0] - t1;
-        Log.e("DIFF > ", t2[0] + t1 + String.valueOf(diff));
+        Log.e("DIFF > ", String.valueOf(t1));
+        //long diff =  Integer.parseInt(tmp) - t1;
+        //Log.e("DIFF > ", tmp+"    " + t1 +"     " + String.valueOf(diff));
         //if(diff < )
     }
-
-
-
 
 
 
