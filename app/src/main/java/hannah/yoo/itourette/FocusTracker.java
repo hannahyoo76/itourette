@@ -53,18 +53,10 @@ public class FocusTracker extends AppCompatActivity {
 
         //2. tracker 하기 (first example)
 
+        setOnClick(trackButton, System.currentTimeMillis());
 
-                trackButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        // flag?
-                       long t2 = System.currentTimeMillis();
-                       tmp = String.valueOf(t2);
-                        Log.e("DIFF > ", String.valueOf(t2)); //1658469784567 1658469812433 1658469816030
-                        // add
-                    }
-                });
         Log.e("DIFF > ", String.valueOf(t1));
+        Log.e("DIFF > ", String.valueOf(tmp));
         //long diff =  Integer.parseInt(tmp) - t1;
         //Log.e("DIFF > ", tmp+"    " + t1 +"     " + String.valueOf(diff));
         //if(diff < )
@@ -76,6 +68,16 @@ public class FocusTracker extends AppCompatActivity {
         audio.start();
     }
 
+
+    private void setOnClick (ImageButton btn, long str){
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tmp = String.valueOf(str);
+
+            }
+        });
+    }
 
     public void onPause(){
         super.onPause();
