@@ -26,7 +26,6 @@ public class Login extends AppCompatActivity {
 
     Button b1,b2;
     TextInputEditText text1, text2;
-    TextView tx1;
     int counter = 3;
 
     @Override
@@ -41,7 +40,6 @@ public class Login extends AppCompatActivity {
 
 
         b2 = (Button) findViewById(R.id.backButton);
-        tx1.setVisibility(View.GONE);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,7 +52,8 @@ public class Login extends AppCompatActivity {
                         .addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()) {
+                                if (task
+                                        .isSuccessful()) {
                                     Intent intent = new Intent(Login.this, Homepage.class);
                                     startActivity(intent);
 

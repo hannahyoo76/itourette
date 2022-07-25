@@ -12,7 +12,7 @@
         android:allowBackup="false">
 
         <activity
-            android:name=".FocusTracker"
+            android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.action.MAIN"/>
@@ -29,7 +29,7 @@
         </activity>
 
         <activity
-            android:name=".Splash"
+            android:name=".FocusTracker"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.action.VIEW"/>
