@@ -31,6 +31,7 @@ android {
     }
     compileSdkVersion 31
     buildToolsVersion '32.0.0'
+    namespace 'hannah.yoo.itourette'
 }
 
 dependencies {
