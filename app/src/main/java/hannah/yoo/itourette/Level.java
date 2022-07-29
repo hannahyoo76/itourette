@@ -1,13 +1,20 @@
 package hannah.yoo.itourette;
 
+import java.util.ArrayList;
+
 public class Level {
 
     public int Red_Dots;
     public int Time;
     public String Red_dot_str;
-
+    public ArrayList<Integer> d1 = new ArrayList<>();
+    public ArrayList<Integer> D2;
+    public ArrayList<Integer> D3;
+    public ArrayList<Integer> D4;
+    public ArrayList<Integer> D5;
 
     public Level() {
+        //d1.add(1000,12000,19000,);
     }
 
     public Level(int Red_Dots, int blabla) {
@@ -38,6 +45,4 @@ public class Level {
         }
         return nextLevel;
     }
-
-
 }

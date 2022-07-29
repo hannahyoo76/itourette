@@ -78,6 +78,7 @@ public class FocusTracker extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buttonStart.setVisibility(View.INVISIBLE);
+                PlayIT(v);
             }
         });
 
@@ -96,7 +97,9 @@ public class FocusTracker extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                myRef.child("user").child(uID).child("map").child(date).setValue(5);
+
+
+                myRef.child(uID).child("map").child(date).setValue(5);
                 /*
                 if(Math.abs(tmp - t1) <= 1000) {
                     Integer i = map.get(date);
