@@ -4,17 +4,15 @@ plugins {
 }
 
 android {
-    compileSdk 29
+    compileSdk 30
 
     defaultConfig {
-        configurations.all {
-            resolutionStrategy { force 'android.core:core:1.6.0' }
-        }
+
         applicationId "hannah.yoo.itourette"
         minSdk 28
         targetSdk 30
-        versionCode 3.1
-        versionName "1.2"
+        versionCode 4
+        versionName "2.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -29,14 +27,12 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    compileSdkVersion 31
-    buildToolsVersion '32.0.0'
-    namespace 'hannah.yoo.itourette'
+
 }
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'androidx.appcompat:appcompat:1.5.0'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'com.google.firebase:firebase-database:20.0.4'
     implementation 'com.google.firebase:firebase-auth:21.0.2'
